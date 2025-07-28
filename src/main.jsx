@@ -4,9 +4,9 @@ import App from './App';
 import './index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
+import { createRoot } from 'react-dom/client';
 const rootElement = document.getElementById('root');
-const root = ReactDOM.createRoot(rootElement);
+const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>

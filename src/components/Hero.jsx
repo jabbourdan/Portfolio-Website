@@ -17,8 +17,12 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Jabbour</span>
           </h1>
+
+          {/* ✅ Fixed: remove div nesting in p */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I do
+          </p>
+          <div className={`${styles.heroSubText} text-white-100`}>
             <Typewriter
               options={{
                 strings: [".NET Developer", "Full Stack Engineer", "Angular Developer", "C# Developer"],
@@ -29,7 +33,7 @@ const Hero = () => {
                 pauseFor: 1000,
               }}
             />
-          </p>
+          </div>
         </div>
       </div>
 
