@@ -1,10 +1,19 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Tilt } from 'react-tilt';
+
+// Import project constants and styling utilities
 import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
+
+/**
+ * ServiceCard component renders individual skill cards with animation
+ * @param {number} index - Card index for staggered animation timing
+ * @param {string} title - The technology or skill name to display
+ * @param {string} iconClass - Font Awesome icon class for the skill icon
+ */
 
 const ServiceCard = ({ index, title, iconClass }) => (
   <motion.div
@@ -29,7 +38,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] leading-[30px]"
       >
         I’m a software engineer with a passion for building real-world solutions and Computer Science graduate with a strong foundation. From launching DoJourney, a live SaaS scheduler used by salons, to contributing to IoT systems at MindoLife, I thrive on turning ideas into working products.
 

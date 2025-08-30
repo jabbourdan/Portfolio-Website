@@ -27,6 +27,7 @@ export const services = [
   { title: "MySQL", iconClass: "fas fa-database" },
   { title: "JavaScript/TypeScript", iconClass: "fab fa-js-square" },
   { title: "AWS", iconClass: "fab fa-aws" },
+  { title: "Azure", iconClass: "fab fa-microsoft" },
   { title: "Docker", iconClass: "fab fa-docker" },
   { title: "C", iconClass: "fas fa-code" },
   { title: "C++", iconClass: "fas fa-code" },
